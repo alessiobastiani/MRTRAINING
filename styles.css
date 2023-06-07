@@ -1,0 +1,431 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #0D0D0D;
+}
+
+.navbar-expand-lg {
+  background-color: #202126;
+}
+.navbar-expand-lg .navbar-toggler {
+  border: 3px solid;
+  color: #0D0D0D;
+  font-size: 30px;
+}
+.navbar-expand-lg .navbar-brand {
+  margin-left: 25px;
+}
+.navbar-expand-lg .navbar-brand img {
+  width: 100px;
+  height: 100px;
+}
+.navbar-expand-lg ul li a {
+  font-size: 19px;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+}
+.navbar-expand-lg ul li a:hover {
+  text-decoration: underline;
+  color: #F2D335;
+}
+.navbar-expand-lg .uno {
+  color: #F2D335;
+}
+.navbar-expand-lg .navbar-collapse {
+  margin-right: 170px;
+}
+
+.portada img {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .portada img {
+    width: 100%;
+    height: 600px;
+  }
+}
+.intro {
+  background-color: #0D0D0D;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.intro .title {
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 15px;
+  color: #F2D335;
+  font-weight: bold;
+  text-align: center;
+}
+.intro .text {
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+}
+
+.video-1 video {
+  width: 100%;
+}
+
+.Profesores {
+  background-color: #0D0D0D;
+}
+.Profesores h2 {
+  text-align: center;
+  color: #F2D335;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Orbitron", sans-serif;
+}
+.Profesores .contenedor-targetas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+.Profesores .contenedor-targetas .card {
+  width: 320px;
+  color: black;
+  background-color: white;
+  margin: 15px;
+  transition: all 0.25s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.Profesores .contenedor-targetas .card a {
+  text-decoration: none;
+  color: #0D0D0D;
+}
+.Profesores .contenedor-targetas .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.formu {
+  padding-bottom: 50px;
+  margin-top: 30px;
+}
+
+.formulario {
+  width: 700px;
+  background-color: #0D0D0D;
+  margin: auto;
+  display: grid;
+  padding: 20px;
+  border-radius: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contactanos contactanos" "nombre       email" "tel          asunto" "mensaje      mensaje" "boton        boton";
+}
+.formulario label {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+.formulario label input {
+  background-color: #0D0D0D;
+  border: 1px solid;
+  border-bottom: 1px solid white;
+  padding: 5px;
+  color: white;
+}
+.formulario label textarea {
+  background-color: #0D0D0D;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px;
+  color: white;
+}
+.formulario button {
+  background-color: #F2D335;
+  border: none;
+  width: 98%;
+  margin: auto;
+}
+.formulario button:hover {
+  background-color: #F29F05;
+}
+.formulario h2 {
+  grid-area: contactanos;
+  color: white;
+  padding: 10px;
+}
+.formulario label:nth-child(2) {
+  grid-area: nombre;
+}
+.formulario label:nth-child(3) {
+  grid-area: email;
+}
+.formulario label:nth-child(4) {
+  grid-area: tel;
+}
+.formulario label:nth-child(5) {
+  grid-area: asunto;
+}
+.formulario label:nth-child(6) {
+  grid-area: mensaje;
+}
+.formulario button {
+  grid-area: boton;
+}
+
+@media (max-width: 740px) {
+  .formulario {
+    width: 95%;
+    background-color: #0D0D0D;
+    margin: auto;
+    display: grid;
+    border-radius: none;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contactanos" "nombre" "email" "tel" "asunto" "mensaje " "boton";
+  }
+}
+.pagos {
+  background-color: #F2D335;
+  padding-top: 15px;
+}
+.pagos .contenedor-pagos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  color: black;
+  height: 400px;
+}
+.pagos .contenedor-pagos .title {
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 20px;
+}
+.pagos .contenedor-pagos .text {
+  font-size: 19px;
+}
+.pagos .contenedor-pagos button {
+  background-color: #0D0D0D;
+  border: none;
+  width: 150px;
+  text-align: center;
+  margin-top: 30px;
+}
+.pagos .contenedor-pagos button:hover {
+  background-color: #35393F;
+}
+
+@media (max-width: 400px) {
+  .pagos .contenedor-pagos button {
+    margin-top: 5px;
+  }
+}
+.separador-footer {
+  border: solid 0.1px #ddd;
+  width: 100%;
+}
+
+.sec-footer {
+  height: 270px;
+  background-color: #202126;
+  width: 100%;
+}
+.sec-footer .redes-footer {
+  list-style: none;
+  text-decoration: none;
+}
+.sec-footer .redes-footer a {
+  color: white;
+  font-size: 25px;
+  padding: 25px;
+}
+.sec-footer .logo-footer {
+  width: 100%;
+  margin-top: 35px;
+}
+.sec-footer .logo-footer img {
+  width: 120px;
+}
+
+.derechos {
+  width: 100%;
+  height: 80px;
+  background-color: #111010;
+  text-align: center;
+  color: white;
+}
+
+.imagenes {
+  width: 80%;
+  height: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.imagenes img {
+  width: 320px;
+  height: 320px;
+  padding: 10px;
+}
+
+.Redes {
+  margin-top: 40px;
+  margin-bottom: 55px;
+}
+.Redes .titulo {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  color: #F2D335;
+}
+.Redes .insta {
+  margin-top: 25px;
+  width: 60%;
+  justify-content: center;
+}
+.Redes .insta a {
+  text-decoration: none;
+}
+.Redes .insta .nop {
+  background-color: #ddd;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #F29F05;
+  font-size: 23px;
+}
+.Redes .insta p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 22px;
+  margin-left: 12px;
+  color: #ddd;
+}
+.Redes .insta p:hover {
+  color: #F29F05;
+}
+
+@media (max-width: 760px) {
+  .Redes .insta {
+    width: 100%;
+    margin: auto;
+  }
+  .Redes .insta .nop {
+    font-size: 17px;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+  }
+  .Redes .insta p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 400px) {
+  .Redes .insta {
+    width: 100%;
+    margin: auto;
+  }
+  .Redes .insta .nop {
+    font-size: 14px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+  }
+  .Redes .insta p {
+    font-size: 14px;
+  }
+}
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0df053;
+  background: #fff;
+}
+
+.btn-flecha {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 55px;
+  border-radius: 0px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 100px;
+  right: 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+  opacity: 1;
+}
+
+.PFS {
+  width: 85%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.PFS .imagen {
+  margin: 45px;
+}
+.PFS .text .title {
+  text-align: center;
+  color: #F2D335;
+  font-family: "Orbitron", sans-serif;
+}
+.PFS .text .especialidad {
+  text-align: center;
+  color: #ddd;
+}
+
+.turnos {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.turnos .title {
+  color: #F2D335;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 45px;
+}
+.turnos .turnito {
+  text-align: center;
+  margin: 28px;
+  color: #ddd;
+}
+.turnos .turnito .amarillo {
+  color: #F2D335;
+}
+.turnos .separador {
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 760px) {
+  .PFS {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
